@@ -1,0 +1,96 @@
+.custom-modal-cart {
+  width: 80%;
+  margin: 100px auto;
+  border-radius: 10px;
+  background-color: #fff;
+  }
+
+
+  .custom-overlay-cart {
+    background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  }
+
+.cart-header {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color:#f2f2f2;
+    border-radius: 10px;
+    
+  }
+  .cart-header button{
+    border-top-right-radius: 10px;
+  }
+  .cart-header h3{
+    border-top-left-radius: 10px;
+  }
+
+.cart-header h3 {
+    padding: 10px;
+}
+
+.cart-container button{
+    background-color:#AB2626;
+    color:#ffffff;
+    border: none;
+}
+
+.button-cart  {
+    display: flex;
+    justify-content: end;
+    margin: 20px;
+    z-index: 1000;
+}
+.button-cart:hover{
+  color:#AB2626;
+  font-size: 1.1em;
+}
+
+button.btn.btn-primary {
+    background-color:#AB2626;
+    color:#ffffff;
+    border: none;
+    z-index: 1000;
+}
+
+img.card-img.card-image {
+  height: 200px;
+  object-fit: cover;
+}
+.empty-cart-message p {
+padding: 30px;
+}
+.empty-cart-message a{
+  text-decoration: none;
+  color:#AB2626;
+}
+.empty-cart-message a:hover{
+  text-decoration: none;
+  color:#AB2626;
+  font-size: 1.1em;
+}
+
+.item-count {
+  background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 1px;
+    font-size: 16px;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    margin: 5px;
+}
+
+.add-button
+{
+  margin-left: 5px;
+}

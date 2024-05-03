@@ -1,0 +1,18 @@
+.contact-section-title {
+    background-color:#AB2626;
+    color:#ffffff;
+    text-align: center;
+    padding: 30px;
+  }
+
+.form-container {
+    margin: 5%;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 30px;
+}
+.contact-section {
+  min-height: 100vh;
+  background-color: #e4e4e4a1;
+}

@@ -1,0 +1,127 @@
+/* Nav.css */
+
+/* Style NavBar */
+nav{
+  padding: 10px 0px;
+  background-color: #ffffff
+}
+
+.phone-nav {
+  display: flex; 
+  align-items: center; 
+}
+
+.phone-nav span {
+  margin-left: 5px;
+}
+
+button {
+  background-color: black; 
+  color: white; 
+  border: none;
+  padding: 10px 16px;
+  margin-right: 5px; 
+  /* font-weight: bolder; */
+  transition: transform 0.3s ease;
+}
+.button button{
+  border-radius: 10px;
+}
+
+button:last-child {
+  margin-right: 0; 
+}
+
+.order-btn:hover {
+
+font-weight: bold;
+font-size: 1.1rem;
+}
+
+
+.phone-nav{
+
+font-weight: bold;
+display: flex;
+gap: 5px;
+}
+
+
+/* Style Cart Icon */
+.basket-cart {
+  display: flex;
+  align-items: center; 
+}
+.basket-cart  {
+color: #000000;
+}
+
+.cart-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart-badge {
+  position: absolute;
+  margin-left: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  padding: 1px;
+  font-size: 16px;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+}
+
+
+.me-auto.justify-content-space-between.navbar-nav {
+  justify-content: space-between;
+}
+
+.phone-nav a{
+text-decoration: none;
+color:#000000
+}
+.phone-nav:hover{
+transition: transform 0.3s ease-in-out;
+transform: translate(0, -8px);
+}
+.cart-badge:hover{
+transition: transform 0.3s ease-in-out;
+transform: translate(0, -8px);
+}
+.basket-cart:hover{
+transition: transform 0.3s ease-in-out;
+transform: translate(0, -8px);
+}
+
+.button {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+span.username
+{
+  margin-right: 10px;
+}
+@media (max-width: 665px) {
+.phone-nav {
+  display: none;
+}
+}
+
+@media (max-width: 440px) {
+  .button {
+    span {
+      display: none;
+    }
+  }
+}
+
+
+
+
+

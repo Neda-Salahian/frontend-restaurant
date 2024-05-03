@@ -1,0 +1,31 @@
+img.card-img.cart-basket {
+    height: 100px;
+    object-fit: cover;
+    width: 100px;
+}
+
+.card-body-basket {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.basket-container {
+    background-color: #e4e4e4;
+    min-height: 100vh;
+} 
+
+.form-basket-container{
+    margin: 2%;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+.button-payment a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+

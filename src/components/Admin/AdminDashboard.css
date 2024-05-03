@@ -1,0 +1,70 @@
+.admin-section-title {
+    background-color:#4a4a4a;
+    color:#ffffff;
+    text-align: center;
+    padding: 30px;
+}
+
+.accordion {
+    padding: 10px;
+    
+}
+button.accordion-button.collapsed {
+    background-color:#4a4a4a;
+    color:#ffffff;
+}
+
+button.btn.btn-success.button-admin-menu {
+    margin: 10px;
+}
+
+td.button-container-menuadmin {
+    display: flex;
+}
+
+.success-header-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color:#f2f2f2;
+    border-radius: 10px;
+    
+  }
+  .success-header-menu button{
+    border-top-right-radius: 10px;
+  }
+  .success-header-menu h3{
+    border-top-left-radius: 10px;
+    padding: 5px;
+  }
+
+  .custom-modal-success-menu {
+    width: 80%;
+    max-width: 500px; 
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      
+    }
+  
+  
+  .custom-overlay-success-menu {
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  
+  .custom-overlay-success-menu h3 {
+      text-align: center;
+  }
+
+  .form-container-style {
+    padding: 10px;
+  }

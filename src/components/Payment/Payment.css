@@ -1,0 +1,14 @@
+.payment-container {
+    min-height: 100vh;
+  background-color: #e4e4e4a1;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.payment-form{
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 30px;
+}

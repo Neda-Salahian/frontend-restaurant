@@ -1,0 +1,53 @@
+
+  .slider-container {
+    background-color: #fcfbf3;
+    padding: 20px;
+  }
+  .comment-container .image-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .image-container .profile {
+    width: 35px;
+  }
+  .image-container .star {
+    width: 120px;
+    padding-left: 10px;
+  }
+
+
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.card-title {
+  margin-top: 10px;
+}
+
+.comment-container:hover{
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px 0 rgba(0,0,50,.12);
+
+}
+/* .card-body-trust.card-body{
+  height: 50vh;
+} */
+
+.slick-track{
+  margin-bottom: 20px;
+}
+
+

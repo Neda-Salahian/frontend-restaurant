@@ -1,0 +1,45 @@
+/* Header.css */
+
+/* Header.css */
+
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.back-header {
+  background-color:#e4e4e4;
+}
+
+.logo-container {
+  position: relative;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.logo-img {
+  max-height: 100px;
+}
+
+.logo-container .logo-img {
+  position: absolute;
+  left: 0px;
+  transform: translateX(-50%);
+  transform: translateY(-48%);
+}
+
+.navbar-nav {
+  flex-grow: 1; 
+  text-align: center; 
+}
+
+.nav-link {
+  transition: transform 0.3s ease;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  transform: translateY(-3px);
+  font-weight: bolder;
+}

@@ -1,0 +1,92 @@
+
+.custom-modal-success-reservation {
+    width: 80%;
+    max-width: 500px; 
+    height: 30%;
+    margin: 100px auto;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      
+    }
+  
+  
+    .custom-overlay-success {
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  
+    .custom-overlay-success-reservation h3 {
+      text-align: center;
+  }
+  
+  .custom-overlay-success-reservation h3 {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-left: 20%;
+  }
+
+.success-reservation {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color:#f2f2f2;
+    border-radius: 10px;
+    
+  }
+  .success-reservation button{
+    border-top-right-radius: 10px;
+  }
+  .success-reservation h3{
+    border-top-left-radius: 10px;
+  }
+
+  .book-reserve{
+    font-size: 40px;
+  }
+.phone-reserve{
+    font-size: 40px;
+  }
+  .container-contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5%;
+    
+  }
+
+  @media (min-width: 360px) and (max-width: 646px) {
+    img.container-logo {
+      width: 220px;
+    }  
+    .container-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    }
+    .phone-reserve {
+      font-size: 35px;
+  }
+  }
+
+  .form-container {
+    margin: 5%;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+.reservation-section{
+  min-height: 100vh;
+  background-color: #e4e4e4a1;
+}

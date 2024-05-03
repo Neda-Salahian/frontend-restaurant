@@ -1,0 +1,12 @@
+.container-feature{
+background-color: #cccccc83;
+padding: 60px;
+}
+
+
+img.image-container.feature-style:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: translate(0, -8px);
+}
+
+
