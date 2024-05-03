@@ -25,7 +25,7 @@ import ProfileUser from "./components/ProfileUser/ProfileUser.jsx";
 import Payment from "./components/Payment/Payment.jsx";
 
 //Import Preloader
-import PreloaderComponent from "./components/PreloaderComponent/PreloaderComponent.jsx";
+// import PreloaderComponent from "./components/PreloaderComponent/PreloaderComponent.jsx";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -132,8 +132,8 @@ function App() {
 
   return (
     <>
-    {showPreloader && <PreloaderComponent />}
-    {!showPreloader && (
+    {/* {showPreloader && <PreloaderComponent />}
+    {!showPreloader && ( */}
       <UserContext.Provider
       value={{ isLoggedIn, setIsLoggedIn, username, setUsername, userRole, setUserRole, isAdmin, setIsAdmin }}
     >
@@ -158,7 +158,7 @@ function App() {
       </CartContext.Provider>
     </UserContext.Provider>
       
-    )}
+    {/* )} */}
     
     </>
   );
