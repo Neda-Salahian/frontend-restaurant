@@ -25,16 +25,16 @@ function Header() {
           />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link className="nav-link" href="/">
+              <Nav.Link className="nav-link" as={Link} to="/">
                 Home
               </Nav.Link>
-              <Nav.Link className="nav-link" href="/Menu">
+              <Nav.Link className="nav-link" as={Link} to="/Menu">
                 Menu
               </Nav.Link>
-              <Nav.Link className="nav-link" href="/Aboutus">
+              <Nav.Link className="nav-link" as={Link} to="/Aboutus">
                 About Us
               </Nav.Link>
-              <Nav.Link className="nav-link" href="/Contactus">
+              <Nav.Link className="nav-link" as={Link} to="/Contactus">
                 Contact Us
               </Nav.Link>
             </Nav>
