@@ -49,7 +49,7 @@ function AboutUsMore() {
               <Card.Body>
                 <Card.Title>Discover Personalized Sushi Perfection</Card.Title>
                 <Card.Text>
-                Experience sushi like never before with our customized sushi service. Tailor your roll with your favorite ingredients, and we'll handcraft a masterpiece just for you. Let your taste buds lead the way – indulge in a culinary adventure that's uniquely yours.
+                `Experience sushi like never before with our customized sushi service. Tailor your roll with your favorite ingredients, and we'll handcraft a masterpiece just for you. Let your taste buds lead the way – indulge in a culinary adventure that's uniquely yours.
                 </Card.Text>
               </Card.Body>
               <Card.Footer>

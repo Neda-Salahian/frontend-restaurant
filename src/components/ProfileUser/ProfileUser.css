@@ -1,5 +1,26 @@
 .profile-section {
-    background-color: #e4e4e4a1;
-    height: 100vh;
+   background-color: #e4e4e4a1;
 }
 
+.order-container {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5%;
+}
+.profile-section-title {
+    background-color:#AB2626;
+    color:#ffffff;
+    text-align: center;
+    padding: 30px;
+}
+
+.profile-container {
+    /* margin: 1%; */
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 30px;
+}

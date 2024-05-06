@@ -26,7 +26,7 @@ function Footer() {
           </Col>
 
           <Col lg={2} md={6} sm={12} xs={12}>
-            <div>
+            <div className="address-container">
               <h4 className="mb-3">Address</h4>
               <p>5th Floor, 350 5th Avenue, Frankfurt, NY 10010, Germany</p>
               <h5>

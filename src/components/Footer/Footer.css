@@ -76,7 +76,7 @@
 
 .footer-row {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
 }
 img.container-logo {
@@ -102,6 +102,11 @@ img.container-logo {
     margin-bottom: 20px;
   }
   
+}
+
+.address-container h5 a{
+  text-decoration: none;
+    color: #ab2626;
 }
 /* 
 @media (min-width: 768px ) {
