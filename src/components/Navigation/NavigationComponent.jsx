@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { FaPhone, FaShoppingCart } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -98,7 +98,6 @@ function Navigation() {
       <Container fluid>
           <div className="basket-cart">
             <FontAwesomeIcon
-              size={20}
               onClick={openModal}
               icon={faShoppingCart}
               style={{ marginLeft: "5px" }}
