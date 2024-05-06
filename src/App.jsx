@@ -45,7 +45,7 @@ function App() {
     // Fetch user role when user logs in
     const fetchUserRole = async () => {
       try {
-        const response = await fetch("https://restaurant-backend-1-ixbn.onrender.com/users/profile", {
+        const response = await fetch("https://restaurant-backend-ccgs.onrender.com/users/profile", {
           credentials: "include",
         });
         if (response.ok) {

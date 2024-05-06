@@ -9,7 +9,7 @@ const ListReservation = () => {
   useEffect(() => {
     const fetchReservations = async () => {
       try {
-        const response = await fetch("https://restaurant-backend-1-ixbn.onrender.com/reservations", {
+        const response = await fetch("https://restaurant-backend-ccgs.onrender.com/reservations", {
           credentials: "include",
         });
 
@@ -31,7 +31,7 @@ const ListReservation = () => {
   const handleDeleteReservation = async (reservationId) => {
     try {
       const response = await fetch(
-        `https://restaurant-backend-1-ixbn.onrender.com/reservations/${reservationId}`,
+        `https://restaurant-backend-ccgs.onrender.com/reservations/${reservationId}`,
         {
           method: "DELETE",
           credentials: "include",

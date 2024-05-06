@@ -10,7 +10,7 @@ function AdminDeliveryOrder() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://restaurant-backend-1-ixbn.onrender.com/deliveryorder/adminorder",
+          "https://restaurant-backend-ccgs.onrender.com/deliveryorder/adminorder",
           { credentials: "include" }
         );
         const data = await response.json();
@@ -26,7 +26,7 @@ function AdminDeliveryOrder() {
   const handleStatusChange = async (orderId, newStatus) => {
     try {
       const response = await fetch(
-        `https://restaurant-backend-1-ixbn.onrender.com/deliveryorder/adminorderupdate/${orderId}`,
+        `https://restaurant-backend-ccgs.onrender.com/deliveryorder/adminorderupdate/${orderId}`,
         {
           method: "PATCH",
           headers: {
@@ -69,7 +69,7 @@ function AdminDeliveryOrder() {
   const handleDeleteOrder = async (orderId) => {
     try {
       const response = await fetch(
-        `https://restaurant-backend-1-ixbn.onrender.com/deliveryorder/adminorderdelete/${orderId}`,
+        `https://restaurant-backend-ccgs.onrender.com/deliveryorder/adminorderdelete/${orderId}`,
         {
           method: "DELETE",
           credentials: "include",

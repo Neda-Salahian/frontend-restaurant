@@ -32,7 +32,7 @@ function MenuList() {
 
   const fetchMenus = async () => {
     try {
-      const response = await fetch("https://restaurant-backend-1-ixbn.onrender.com/menu/", {
+      const response = await fetch("https://restaurant-backend-ccgs.onrender.com/menu/", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -52,7 +52,7 @@ function MenuList() {
 
   const handleDelete = async (menuId) => {
     try {
-      const response = await fetch(`https://restaurant-backend-1-ixbn.onrender.com/menu/${menuId}`, {
+      const response = await fetch(`https://restaurant-backend-ccgs.onrender.com/menu/${menuId}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -83,7 +83,7 @@ function MenuList() {
   const handleUpdate = async (updatedMenuData) => {
     try {
       const response = await fetch(
-        `https://restaurant-backend-1-ixbn.onrender.com/menu/${updatedMenuData._id}`,
+        `https://restaurant-backend-ccgs.onrender.com/menu/${updatedMenuData._id}`,
         {
           method: "PATCH",
           headers: {
@@ -117,7 +117,7 @@ function MenuList() {
       formDataWithPicture.append("picture", formData.picture);
 
       const response = await fetch(
-        "https://restaurant-backend-1-ixbn.onrender.com/menu/uploadmenu",
+        "https://restaurant-backend-ccgs.onrender.com/menu/uploadmenu",
         {
           method: "POST",
           body: formDataWithPicture,

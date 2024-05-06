@@ -49,7 +49,7 @@ function Reservation() {
 
         try {
             const response = await axios.post(
-                "https://restaurant-backend-1-ixbn.onrender.com/reservations",
+                "https://restaurant-backend-ccgs.onrender.com/reservations",
                 formData
             );
             console.log("Reservation created successfully:", response.data);

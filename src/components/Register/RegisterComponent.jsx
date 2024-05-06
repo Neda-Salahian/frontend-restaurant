@@ -21,7 +21,7 @@ function Register({ isOpenRegister, onRequestClose }) {
 useEffect(() => {
   const fetchUsers = async () => {
     try {
-      const response = await fetch("https://restaurant-backend-1-ixbn.onrender.com/users");
+      const response = await fetch("https://restaurant-backend-ccgs.onrender.com/users");
       if (!response.ok) {
         throw new Error("Failed to fetch users");
       }
@@ -59,7 +59,7 @@ const handleRegister = async (e) => {
   const newUser = { username, firstname, lastname, email, password };
 
   try {
-    const response = await fetch("https://restaurant-backend-1-ixbn.onrender.com/users/signup", {
+    const response = await fetch("https://restaurant-backend-ccgs.onrender.com/users/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

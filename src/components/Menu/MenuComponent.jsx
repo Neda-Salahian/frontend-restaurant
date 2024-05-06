@@ -33,7 +33,7 @@ function Menu() {
   useEffect(() => {
     const fetchMenus = async () => {
       try {
-        const response = await axios.get("https://restaurant-backend-1-ixbn.onrender.com/menu");
+        const response = await axios.get("https://restaurant-backend-ccgs.onrender.com/menu");
         setMenus(response.data);
         const spinnerTimeout = setTimeout(() => {
           setLoading(false);

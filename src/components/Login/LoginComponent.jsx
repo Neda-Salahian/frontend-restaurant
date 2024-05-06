@@ -50,7 +50,7 @@ function Login({ isOpenLogin, onRequestClose, isLoggedIn, setIsLoggedIn, isAdmin
 
   const fetchUsers = async () => {
     try {
-      const response = await fetch("https:/restaurant-backend-1-ixbn.onrender.com/users");
+      const response = await fetch("https://restaurant-backend-ccgs.onrender.com/users");
       if (response.ok) {
         const userData = await response.json();
         setUsers(userData);
@@ -73,7 +73,7 @@ function Login({ isOpenLogin, onRequestClose, isLoggedIn, setIsLoggedIn, isAdmin
     }
 
     try {
-      const response = await fetch("https://restaurant-backend-1-ixbn.onrender.com/users/login", {
+      const response = await fetch("https://restaurant-backend-ccgs.onrender.com/users/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

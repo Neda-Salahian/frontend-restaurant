@@ -80,7 +80,7 @@ const ProfileEditModal = ({
   //   try {
   //     await onUpdateProfile(formData);
 
-  //     await fetch("https://restaurant-backend-1-ixbn.onrender.com/users/updateprofile", {
+  //     await fetch("https://restaurant-backend-ccgs.onrender.com/users/updateprofile", {
   //       method: "PATCH",
   //       headers: {
   //         "Content-Type": "application/json",

@@ -10,7 +10,7 @@ function ListContact() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://restaurant-backend-1-ixbn.onrender.com/messageqna", {
+        const response = await fetch("https://restaurant-backend-ccgs.onrender.com/messageqna", {
           credentials: "include",
         });
 
@@ -31,7 +31,7 @@ function ListContact() {
   const handleDeleteMessageContact = async (messageId) => {
     try {
       const response = await fetch(
-        `https://restaurant-backend-1-ixbn.onrender.com/messageqna/${messageId}`,
+        `https://restaurant-backend-ccgs.onrender.com/messageqna/${messageId}`,
         {
           method: "DELETE",
           credentials: "include",

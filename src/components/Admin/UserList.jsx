@@ -8,7 +8,7 @@ function UserList() {
     useEffect(() => {
         const fetchUserListbyAdmin = async () => {
             try {
-                const response = await fetch("https://restaurant-backend-1-ixbn.onrender.com/users/getusers", {
+                const response = await fetch("https://restaurant-backend-ccgs.onrender.com/users/getusers", {
                     credentials: "include",
                 });
                 if (!response.ok) {

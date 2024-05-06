@@ -41,7 +41,7 @@ function ContactUs() {
 
     try {
       const response = await axios.post(
-        "https://restaurant-backend-1-ixbn.onrender.com/messageqna",
+        "https://restaurant-backend-ccgs.onrender.com/messageqna",
         formData
       );
       console.log("Message sent successfully:", response.data);

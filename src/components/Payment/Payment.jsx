@@ -30,7 +30,7 @@ function Payment() {
       const menus = cartItems.map((item) => item && item._id);
 
       const response = await fetch(
-        "https://restaurant-backend-1-ixbn.onrender.com/deliveryorder/userorder",
+        "https://restaurant-backend-ccgs.onrender.com/deliveryorder/userorder",
         {
           method: "POST",
           headers: {

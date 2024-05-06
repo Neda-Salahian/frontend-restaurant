@@ -26,7 +26,7 @@ const ProfileUser = () => {
   useEffect(() => {
     const fetchProfileData = async () => {
       try {
-        const response = await fetch("https://restaurant-backend-1-ixbn.onrender.com/users/profile", {
+        const response = await fetch("https://restaurant-backend-ccgs.onrender.com/users/profile", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -52,7 +52,7 @@ const ProfileUser = () => {
 
   const handleUpdateProfile = async (updatedProfile) => {
     try {
-      const response = await fetch("https://restaurant-backend-1-ixbn.onrender.com/users/updateprofile", {
+      const response = await fetch("https://restaurant-backend-ccgs.onrender.com/users/updateprofile", {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",

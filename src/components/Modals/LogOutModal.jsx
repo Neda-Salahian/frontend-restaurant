@@ -14,7 +14,7 @@ function LogOutModal({
   const handleLogout = async () => {
     console.log("Attempting to logout...");
     try {
-      const response = await fetch("https://restaurant-backend-1-ixbn.onrender.com/users/logout", {
+      const response = await fetch("https://restaurant-backend-ccgs.onrender.com/users/logout", {
         method: "GET",
         credentials: "include",
       });
