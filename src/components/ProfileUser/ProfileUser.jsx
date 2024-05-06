@@ -4,13 +4,8 @@ import Navigation from "../Navigation/NavigationComponent.jsx";
 import Header from "../Header/HeaderComponent.jsx";
 import Footer from "../Footer/Footer.jsx";
 import ProfileEditModal from "./ProfileEditModal.jsx";
-<<<<<<< HEAD
-=======
-import { Container, Row, Button, Col } from "react-bootstrap";
-
 
 // Import CSS
->>>>>>> 3bfd3127a626b652c7e6cfa92341044be911cba7
 import "./ProfileUser.css";
 
 const ProfileUser = () => {
@@ -139,26 +134,26 @@ const ProfileUser = () => {
           )}
         </Row>
 
-        <Row>
-  <div>
-    <h3>User Orders</h3>
-    {orders.map((order, index) => (
-      <div key={index} className="order-item">
-        <p>Order ID: {order._id}</p>
-        <p>Time order : {order.time}</p>
-        <p>Quantity: {order.quantity}</p>
-        <p>Price: ${order.price}</p>
-        <p>Ordered Menus:</p>
-        <ul>
-          {order.menus.map((menu, menuIndex) => (
-            <li key={menuIndex}>{menu.title}</li>
-          ))}
-        </ul>
-        {/* Add more order details if needed */}
-      </div>
-    ))}
-  </div>
-</Row>
+        <Row className="g-2 form-container">
+          <div>
+            <h3>User Orders</h3>
+            {orders.map((order, index) => (
+              <div key={index} className="order-item">
+                <p>Order ID: {order._id}</p>
+                <p>Time order : {order.time}</p>
+                <p>Quantity: {order.quantity}</p>
+                <p>Price: ${order.price}</p>
+                <p>Ordered Menus:</p>
+                <ul>
+                  {order.menus.map((menu, menuIndex) => (
+                    <li key={menuIndex}>{menu.title}</li>
+                  ))}
+                </ul>
+                {/* Add more order details if needed */}
+              </div>
+            ))}
+          </div>
+        </Row>
 
       </Container>
 
