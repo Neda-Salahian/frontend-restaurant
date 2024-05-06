@@ -78,7 +78,7 @@ const ProfileUser = () => {
     <>
       <Navigation />
       <Header />
-      <Container fluid>
+      <Container fluid className="profile-section">
         <Row className="contact-section-title">
           <div>
             <h3>Profile User </h3>
