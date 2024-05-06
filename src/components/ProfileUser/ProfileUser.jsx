@@ -1,38 +1,31 @@
-//Import React
-import { useState, useEffect, useContext } from "react";
-import axios from "axios";
-
-// Import Component
+import { useState, useEffect } from "react";
+import { Container, Row, Button, Col } from "react-bootstrap";
 import Navigation from "../Navigation/NavigationComponent.jsx";
 import Header from "../Header/HeaderComponent.jsx";
 import Footer from "../Footer/Footer.jsx";
 import ProfileEditModal from "./ProfileEditModal.jsx";
-import { Container, Row, Button, Col } from "react-bootstrap";
-
-// Import CSS
 import "./ProfileUser.css";
 
 const ProfileUser = () => {
   const [profileData, setProfileData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-
   const [showModal, setShowModal] = useState(false);
-
-  // const handleUpdateUserData = (updatedUserData) => {
-  //   setUserData(updatedUserData);
-  // };
+  const [orders, setOrders] = useState([]);
 
   useEffect(() => {
     const fetchProfileData = async () => {
       try {
-        const response = await fetch("https://restaurant-backend-ccgs.onrender.com/users/profile", {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          credentials: "include",
-        });
+        const response = await fetch(
+          "https://restaurant-backend-ccgs.onrender.com/users/profile",
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            credentials: "include",
+          }
+        );
 
         if (!response.ok) {
           throw new Error("Failed to fetch profile data");
@@ -52,14 +45,17 @@ const ProfileUser = () => {
 
   const handleUpdateProfile = async (updatedProfile) => {
     try {
-      const response = await fetch("https://restaurant-backend-ccgs.onrender.com/users/updateprofile", {
-        method: "PATCH",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        credentials: "include",
-        body: JSON.stringify(updatedProfile),
-      });
+      const response = await fetch(
+        "https://restaurant-backend-ccgs.onrender.com/users/updateprofile",
+        {
+          method: "PATCH",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          credentials: "include",
+          body: JSON.stringify(updatedProfile),
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Failed to update profile");
@@ -72,7 +68,35 @@ const ProfileUser = () => {
     }
   };
 
+  const fetchUserOrder = async () => {
+    try {
+      const response = await fetch(
+        "https://restaurant-backend-ccgs.onrender.com/deliveryorder/userorder",
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          credentials: "include",
+        }
+      );
 
+      if (!response.ok) {
+        throw new Error("Failed to fetch user order");
+      }
+
+      const data = await response.json();
+      setOrders(data);
+      console.log(data);
+    } catch (error) {
+      console.error("Error fetching user order:", error);
+      setError(error.message);
+    }
+  };
+
+  useEffect(() => {
+    fetchUserOrder();
+  }, []);
 
   return (
     <>
@@ -102,12 +126,33 @@ const ProfileUser = () => {
                   Edit
                 </Button>
               </Col>
-
             </>
           ) : (
             <p>No profile data available</p>
           )}
         </Row>
+
+        <Row>
+  <div>
+    <h3>User Orders</h3>
+    {orders.map((order, index) => (
+      <div key={index} className="order-item">
+        <p>Order ID: {order._id}</p>
+        <p>Time order : {order.time}</p>
+        <p>Quantity: {order.quantity}</p>
+        <p>Price: ${order.price}</p>
+        <p>Ordered Menus:</p>
+        <ul>
+          {order.menus.map((menu, menuIndex) => (
+            <li key={menuIndex}>{menu.title}</li>
+          ))}
+        </ul>
+        {/* Add more order details if needed */}
+      </div>
+    ))}
+  </div>
+</Row>
+
       </Container>
 
       <Footer />
@@ -118,8 +163,6 @@ const ProfileUser = () => {
         profileData={profileData}
         onUpdateProfile={handleUpdateProfile}
       />
-
-
     </>
   );
 };
