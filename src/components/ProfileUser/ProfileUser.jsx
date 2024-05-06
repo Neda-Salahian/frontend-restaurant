@@ -9,7 +9,6 @@ import Footer from "../Footer/Footer.jsx";
 import ProfileEditModal from "./ProfileEditModal.jsx";
 import { Container, Row, Button, Col } from "react-bootstrap";
 
-import OrderUser from "../OrderUser/OrderUser.jsx";
 
 // Import CSS
 import "./ProfileUser.css";
@@ -109,10 +108,6 @@ const ProfileUser = () => {
           ) : (
             <p>No profile data available</p>
           )}
-        </Row>
-
-        <Row className="g-2 form-container">
-          <OrderUser />
         </Row>
       </Container>
 
