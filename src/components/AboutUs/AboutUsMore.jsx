@@ -44,7 +44,7 @@ function AboutUsMore() {
             <Card>
               <Card.Img
                 variant="top"
-                src="../../../public/assets/images/image-about.jpg"
+                src="./assets/images/image-about.jpg"
               />
               <Card.Body>
                 <Card.Title>Discover Personalized Sushi Perfection</Card.Title>
@@ -59,7 +59,7 @@ function AboutUsMore() {
             <Card>
               <Card.Img
                 variant="top"
-                src="../../../public/assets/images/about-image-1.jpg"
+                src="./assets/images/about-image-1.jpg"
               />
               <Card.Body>
                 <Card.Title>Chef's Special Rolls</Card.Title>
@@ -74,7 +74,7 @@ function AboutUsMore() {
             <Card>
               <Card.Img
                 variant="top"
-                src="../../../public/assets/images/about-image-3.jpg"
+                src="./assets/images/about-image-3.jpg"
               />
               <Card.Body>
                 <Card.Title>Vegetarian/Vegan Selections</Card.Title>

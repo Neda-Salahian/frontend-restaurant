@@ -4,6 +4,13 @@ import Navigation from "../Navigation/NavigationComponent.jsx";
 import Header from "../Header/HeaderComponent.jsx";
 import Footer from "../Footer/Footer.jsx";
 import ProfileEditModal from "./ProfileEditModal.jsx";
+<<<<<<< HEAD
+=======
+import { Container, Row, Button, Col } from "react-bootstrap";
+
+
+// Import CSS
+>>>>>>> 3bfd3127a626b652c7e6cfa92341044be911cba7
 import "./ProfileUser.css";
 
 const ProfileUser = () => {
@@ -102,7 +109,7 @@ const ProfileUser = () => {
     <>
       <Navigation />
       <Header />
-      <Container fluid>
+      <Container fluid className="profile-section">
         <Row className="contact-section-title">
           <div>
             <h3>Profile User </h3>
