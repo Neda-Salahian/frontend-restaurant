@@ -12,6 +12,7 @@ import Footer from "../Footer/Footer.jsx";
 import ContactUsModal from "./ContactUsModal.jsx";
 
 function ContactUs() {
+  console.log("Hiiiiii")
   const [formData, setFormData] = useState({
     name: "",
     email: "",

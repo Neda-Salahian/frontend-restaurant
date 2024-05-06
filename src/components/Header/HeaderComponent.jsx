@@ -28,7 +28,7 @@ function Header() {
               <Nav.Link className="nav-link" href="/">
                 Home
               </Nav.Link>
-              <Nav.Link className="nav-link" href="/menu">
+              <Nav.Link className="nav-link" href="/Menu">
                 Menu
               </Nav.Link>
               <Nav.Link className="nav-link" href="/Aboutus">
