@@ -1,13 +1,13 @@
 
 import Slider from "react-slick";
-import starImage1 from "../../assets/images/stars-1.svg";
-import starImage3 from "../../assets/images/stars-3.svg";
-import starImage4 from "../../assets/images/stars-4.svg";
-import starImage5 from "../../assets/images/stars-5.svg";
-import profileImage from "../../assets/images/profile.png";
-import profileImage2 from "../../assets/images/profile2.png";
-import profileImage3 from "../../assets/images/profile3.png";
-import profileImage4 from "../../assets/images/profile4.png";
+import starImage1 from "../../../public/assets/images/stars-1.svg";
+import starImage3 from "../../../public/assets/images/stars-3.svg";
+import starImage4 from "../../../public/assets/images/stars-4.svg";
+import starImage5 from "../../../public/assets/images/stars-5.svg";
+import profileImage from "../../../public/assets/images/profile.png";
+import profileImage2 from "../../../public/assets/images/profile2.png";
+import profileImage3 from "../../../public/assets/images/profile3.png";
+import profileImage4 from "../../../public/assets/images/profile4.png";
 import "./TrustPilot.css";
 
 import { Container, Card, Image } from "react-bootstrap";

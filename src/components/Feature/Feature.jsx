@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import feature1svg from "../../assets/images/feature-1.svg";
-import feature2svg from "../../assets/images/feature-2.svg";
-import feature3svg from "../../assets/images/feature-3.svg";
+import feature1svg from "../../../public/assets/images/feature-1.svg";
+import feature2svg from "../../../public/assets/images/feature-2.svg";
+import feature3svg from "../../../public/assets/images/feature-3.svg";
 
 import "./Feature.css";
 

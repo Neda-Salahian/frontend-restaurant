@@ -1,7 +1,7 @@
 // Header.js
 import React, { useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import logoImage from "../../assets/images/logo-header-1.png";
+import logoImage from "../../../public/assets/images/logo-header-1.png";
 
 // Import CSS
 import "../Header/Header.css";

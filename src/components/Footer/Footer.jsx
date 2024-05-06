@@ -1,9 +1,9 @@
 import "./Footer.css";
 
-import logoImage from "../../assets/images/logo-header-1.png";
-import instagramSvg from "../../assets/images/instagram.svg";
-import telegramSvg from "../../assets/images/telegram.svg";
-import youtubeSvg from "../../assets/images/youtube.svg";
+import logoImage from "../../../public/assets/images/logo-header-1.png";
+import instagramSvg from "../../../public/assets/images/instagram.svg";
+import telegramSvg from "../../../public/assets/images/telegram.svg";
+import youtubeSvg from "../../../public/assets/images/youtube.svg";
 
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";

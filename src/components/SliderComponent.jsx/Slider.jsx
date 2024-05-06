@@ -13,9 +13,9 @@ import "./Slider.css";
 import { Link } from "react-router-dom";
 function Slider() {
   const images = [
-    { id: 1, src: "../../../src/assets/images/slider-4.png", alt: "Image 1" },
-    { id: 2, src: "../../../src/assets/images/slider-5.png", alt: "Image 2" },
-    { id: 3, src: "../../../src/assets/images/slider-4.png", alt: "Image 3" },
+    { id: 1, src: "../../../public/assets/images/slider-4.png", alt: "Image 1" },
+    { id: 2, src: "../../../public/assets/images/slider-5.png", alt: "Image 2" },
+    { id: 3, src: "../../../public/assets/images/slider-4.png", alt: "Image 3" },
   ];
 
   return (
