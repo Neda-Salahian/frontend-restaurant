@@ -44,7 +44,7 @@ function ContactUs() {
         "https://restaurant-backend-ccgs.onrender.com/messageqna",
         formData
       );
-      console.log("Message sent successfully:", response.data);
+      // console.log("Message sent successfully:", response.data);
       setMessageSubmitted(true);
       clearTheForm();
       // setTimeout(() => {

@@ -88,14 +88,6 @@ color:#000000
 transition: transform 0.3s ease-in-out;
 transform: translate(0, -8px);
 }
-.cart-badge:hover{
-transition: transform 0.3s ease-in-out;
-transform: translate(0, -8px);
-}
-.basket-cart:hover{
-transition: transform 0.3s ease-in-out;
-transform: translate(0, -8px);
-}
 
 .button {
 display: flex;

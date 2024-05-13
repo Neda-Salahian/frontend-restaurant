@@ -36,8 +36,8 @@ function Navigation() {
     localStorage.getItem("isLoggedIn") === "true"
   );
 
-  console.log("isAdmin:", isAdmin);
-  console.log("userRole:", userRole);
+  // console.log("isAdmin:", isAdmin);
+  // console.log("userRole:", userRole);
 
   useEffect(() => {
     const isLoggedInStorage = localStorage.getItem("isLoggedIn") === "true";

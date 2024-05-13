@@ -91,7 +91,7 @@ const ProfileUser = () => {
 
       const data = await response.json();
       setOrders(data);
-      console.log(data);
+      // console.log(data);
     } catch (error) {
       console.error("Error fetching user order:", error);
       setError(error.message);

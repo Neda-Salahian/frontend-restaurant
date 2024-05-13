@@ -35,7 +35,7 @@ function Basket() {
     setAddress(e.target.value);
   };
 
-  console.log("address", address);
+  // console.log("address", address);
 
   const handlePaymentButton = () => {
     if (address === "") {

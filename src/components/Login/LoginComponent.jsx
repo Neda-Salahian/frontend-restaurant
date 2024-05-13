@@ -84,7 +84,7 @@ function Login({ isOpenLogin, onRequestClose, isLoggedIn, setIsLoggedIn, isAdmin
 
       if (response.ok) {
         const userData = await response.json();
-        console.log(userData);
+        // console.log(userData);
         setIsLoggedIn(true);
         setContextUsername(username);
         localStorage.setItem("isLoggedIn", "true");

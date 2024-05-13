@@ -15,7 +15,7 @@ function AdminDeliveryOrder() {
         );
         const data = await response.json();
         setOrders(data);
-        console.log(data);
+        // console.log(data);
       } catch (error) {
         console.error("Error fetching orders in admin dashboard:", error);
       }
@@ -38,7 +38,7 @@ function AdminDeliveryOrder() {
       );
 
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
 
       const updatedOrderStatus = orders.map((order) => {
         if (order._id === orderId) {

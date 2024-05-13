@@ -52,7 +52,7 @@ function Reservation() {
                 "https://restaurant-backend-ccgs.onrender.com/reservations",
                 formData
             );
-            console.log("Reservation created successfully:", response.data);
+            // console.log("Reservation created successfully:", response.data);
             setReservationSubmitted(true);
             clearTheForm();
             // setTimeout(() => {

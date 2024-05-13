@@ -12,7 +12,7 @@ function LogOutModal({
   const navigateTo = useNavigate();
 
   const handleLogout = async () => {
-    console.log("Attempting to logout...");
+    // console.log("Attempting to logout...");
     try {
       const response = await fetch("https://restaurant-backend-ccgs.onrender.com/users/logout", {
         method: "GET",
@@ -21,7 +21,7 @@ function LogOutModal({
       if (!response.ok) {
         console.log("Failed to log out.");
       } else {
-        console.log("Successfully logged out.");
+        // console.log("Successfully logged out.");
         localStorage.removeItem("isLoggedIn");
         localStorage.removeItem("username");
         setIsLoggedIn(false);

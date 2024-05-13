@@ -57,7 +57,7 @@ function App() {
           } else {
             setIsAdmin(false)
           }
-          console.log(userData.role);
+          // console.log(userData.role);
         }
       } catch (error) {
         console.error("Error fetching user profile:", error);

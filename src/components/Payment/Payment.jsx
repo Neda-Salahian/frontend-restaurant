@@ -7,16 +7,16 @@ import CartContext from "../context/CartContext.jsx";
 
 function Payment() {
   const { cartItems, emptyCart } = useContext(CartContext);
-  console.log(cartItems);
+  // console.log(cartItems);
   const [paymentStatus, setPaymentStatus] = useState("");
   const [showMadalSuccess, setShowMadalSuccess] = useState(false);
 
   const navigateTo = useNavigate();
 
   const location = useLocation();
-  console.log("Location state:", location.state);
+  // console.log("Location state:", location.state);
   const { address } = location.state || {};
-  console.log(address, "in payment component");
+  // console.log(address, "in payment component");
 
   const handlePayment = async () => {
     try {
@@ -49,8 +49,8 @@ function Payment() {
         throw new Error("Failed to create order");
       }
 
-      console.log("Order created:", await response.json());
-      console.log("Payment successful");
+      // console.log("Order created:", await response.json());
+      // console.log("Payment successful");
       setShowMadalSuccess(true);
       setPaymentStatus("success");
       localStorage.removeItem("cartItems");
