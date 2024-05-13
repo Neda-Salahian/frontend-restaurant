@@ -121,7 +121,7 @@ function AdminDeliveryOrder() {
               }) => (
                 <tr key={_id}>
                   <td>{_id}</td>
-                  <td>{user.username}</td>
+                  <td>{user ? user.username : 'Unknown User'}</td>
                   <td>{address}</td>
                   <td
                     style={{
@@ -129,8 +129,8 @@ function AdminDeliveryOrder() {
                         status === "delivered"
                           ? "yellow"
                           : status === "confirmed"
-                          ? "green"
-                          : "inherit",
+                            ? "green"
+                            : "inherit",
                     }}
                   >
                     <StatusDropdown orderId={_id} currentStatus={status} />
